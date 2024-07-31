@@ -85,12 +85,31 @@ function calcular() {
     } else if (seleccion == '*') {
         res = num1 * num2;
     } else if (seleccion == '/') {
-        if (num1 > 0 && num2 > 0) {
+        if (num2 > 0) {
             res = num1 / num2;
         } else {
             res = 'No se puede dividir entre 0'
         }
     }
+
+    // switch(seleccion){
+    //     case '+':
+    //         res=num1+num2;
+    //         break;
+    //     case '-':
+    //         res=num1-num2;
+    //         break;
+    //     case '*':
+    //         res= num1*num2;
+    //         break;
+    //     case '/':
+    //         if(num2>0){
+    //             res=num1/num2;
+    //         }else{
+    //             res='No se puede dividir entre 0';
+    //         }
+    //         break;
+    // }
 
     document.getElementById('resultadoCalculadora').textContent = res;
 }
