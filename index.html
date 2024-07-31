@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>JavaScript</title>
 </head>
+
 <body>
-    <script src="JS/javascript.js">
-        
-    </script>
+
+    <h1>Calculadora simple</h1>
+    <input type="number" id="numero1">
+    <select id="selector">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/ </option>
+    </select>
+    <input type="number" id="numero2">
+    <br>
+    <div>
+        <button onclick="calcular()">Calcular</button>
+        <button onclick="limpiar()">Limpiar</button>
+    </div>
+    
+
+    <p id="resultadoCalculadora">
+
+    </p>
+
+    <!-- <h1>Calculadora de edad de mascotas</h1>
+    <input type="text" id="nombreMascota" placeholder="Nombre de tu mascota">
+    <input type="number" id="edadMascota" placeholder="La edad de tu mascota">
+
+    <button onclick="calcularEdad()">Calcular edad</button>
+    <p id="resultado">
+
+    </p>
+
+    <h2>Impuestos de la compra</h2>
+    <input type="text" id="nombreUser" placeholder="Tu nombre">
+    <input type="number" id="importeCompra" placeholder="El importe de la compra">
+    <label>
+        <input type="checkbox" id="ivaReducido">
+        IVA reducido
+    </label>
+    <br>
+    <button onclick="calcularCompra()">Calcular</button>
+    
+    <p id="res">
+
+    </p> -->  
+
+
+
+    <script src="JS/javascript2.js">
+
+    </script>       
 </body>
-</html>
+
+</html> 

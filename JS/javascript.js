@@ -62,17 +62,17 @@
 
 
 // EJERCICIOS
-// declarar una variable para guardar un nombre
-let nombre = "Fulanito"
+// // declarar una variable para guardar un nombre
+// let nombre = "Fulanito"
 
-// declarar variable para guardar un apellido
-let apellidos = "Fernandez"
+// // declarar variable para guardar un apellido
+// let apellidos = "Fernandez"
 
-// declarar una variable para la edad
-let edad = 24
+// // declarar una variable para la edad
+// let edad = 24
 
-// mostrar po consola una frase: Fulanito Fernandez tiene tantos años
-console.log(nombre + " " + apellidos + " " + "tiene "+ edad + " años")
+// // mostrar po consola una frase: Fulanito Fernandez tiene tantos años
+// console.log(nombre + " " + apellidos + " " + "tiene "+ edad + " años")
 
 
 
