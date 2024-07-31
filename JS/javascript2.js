@@ -42,20 +42,21 @@ function calcularCompra() {
 
     // Guardamos el valor del checkbox
     let cbIVA = document.getElementById('ivaReducido').checked;
-    
+
     let mensaje;
     if (compra > 0 && !cbIVA) {
         let porcentaje = compra * iva / 100;
         let resFinal = compra + porcentaje;
 
         // Preparamos el mensaje a enviar
-        mensaje = `El importe final de la compra de ${nom} compra es ${resFinal}`;
-    }else if(cbIVA && compra > 0){
+        // tofixed formatea los decimales de los numeros
+        mensaje = `El importe final de la compra de ${nom} compra es ${resFinal.toFixed(2)}`;
+    } else if (cbIVA && compra > 0) {
         let porcentaje = compra * ivaReducido / 100;
         let resFinal = compra + porcentaje;
-
-        mensaje = `El importe final de la compra de ${nom} compra es ${resFinal}`;
-    }else{
+        // tofixed formatea los decimales de los numeros
+        mensaje = `El importe final de la compra de ${nom} compra es ${resFinal.toFixed(2)}`;
+    } else {
         mensaje = `La compra no puede ser negativa`;
     }
 
@@ -64,7 +65,7 @@ function calcularCompra() {
 }
 
 
-function calcular(){
+function calcular() {
     // Obtenemos las variables
     let num1 = document.getElementById('numero1').value;
     let num2 = document.getElementById('numero2').value;
@@ -72,29 +73,33 @@ function calcular(){
     let res;
 
     // Pasamos los numeros de string a numero
-    num1=Number(num1);
-    num2=Number(num2);
+    num1 = Number(num1);
+    num2 = Number(num2);
 
     console.log(seleccion)
 
-    if(seleccion=='+'){
-        res=num1+num2;
-    }else if(seleccion=='-'){
-        res=num1-num2;
-    }else if(seleccion=='*'){
-        res= num1*num2;
-    }else if(seleccion == '/'){
-        res=num1/num2;
+    if (seleccion == '+') {
+        res = num1 + num2;
+    } else if (seleccion == '-') {
+        res = num1 - num2;
+    } else if (seleccion == '*') {
+        res = num1 * num2;
+    } else if (seleccion == '/') {
+        if (num1 > 0 && num2 > 0) {
+            res = num1 / num2;
+        } else {
+            res = 'No se puede dividir entre 0'
+        }
     }
 
     document.getElementById('resultadoCalculadora').textContent = res;
 }
 
-function limpiar(){
+function limpiar() {
     let num1 = document.getElementById('numero1').value = '';
     let num2 = document.getElementById('numero2').value = '';
     let seleccion = document.getElementById('selector').value = '+';
-    
+
 
     document.getElementById('resultadoCalculadora').textContent = '';
 }
