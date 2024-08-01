@@ -53,6 +53,23 @@ select{
     font-size: 1.5rem;
 }
 
+.frase{
+    height: 120px;
+    width: 1000px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.parrafo{
+    font-size: 16px;
+    color:blue;
+    font-weight: bold;
+}
+
 
 /* body{
     text-align: center;

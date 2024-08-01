@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/pptStyles.css">
+</head>
+
+<body>
+    <main>
+        <h1>Piedra, papel o tijera</h1>
+        <div class="ppt">
+            <div class="pptItem">
+                <button id="piedra" onclick="ppt('Piedra')">
+                    ✊
+                </button>
+            </div>
+            <div class="pptItem" onclick="ppt('Papel')">
+                <button id="papel">
+                    🖐
+                </button>
+            </div>
+            <div class="pptItem" onclick="ppt('Tijera')">
+                <button id="tijera">
+                    ✌
+                </button>
+            </div>
+        </div>
+        <div class="veredicto">
+            <p id="resultado">
+
+            </p>
+        </div>
+        <div class="resultados">
+            <p id="contadorMaquina">
+
+            </p>
+            <p id="contadorTu">
+
+            </p>
+        </div>
+        <div class="veredicto">
+            <p id="texto">
+
+            </p>
+        </div>
+    </main>
+
+    <script src="JS/ppt.js"></script>
+</body>
+
+</html>
